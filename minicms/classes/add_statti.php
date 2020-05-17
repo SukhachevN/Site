@@ -8,7 +8,7 @@ function create_champ(i) {
 var i2 = i + 1;
 
 document.getElementById('leschamps_'+i).innerHTML = '<div><p>Изображение:<br /><input type="file" name="img_src[]"></p><br /><textarea class="dd" name="text['+i+']"></textarea><br /></div></span>';
-document.getElementById('leschamps_'+i).innerHTML += (i <= 10) ? '<br /><span id="leschamps_'+i2+'"><a href="javascript:create_champ('+i2+')">Ajouter un champs</a></span>' : '';
+document.getElementById('leschamps_'+i).innerHTML += (i <= 10) ? '<br /><span id="leschamps_'+i2+'"><a href="javascript:create_champ('+i2+')"><h2>NEW PARAGRAPH</h2><br /></a></span>' : '';
 }
 </script>
 </head>
