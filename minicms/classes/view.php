@@ -47,7 +47,7 @@ class view extends ACore
                 <h1><?php echo $title; ?></h1>
                 <div class='mainContent2'>
                     <?php 
-                    for ($z = 0;$z < 4; $z++) {
+                    for ($z = 0;$z < $count; $z++) {
 
                     $row = array();
                     $row = mysqli_fetch_array($result);
