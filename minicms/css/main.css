@@ -4,7 +4,7 @@
     top: 0px;
     display: flex;
     flex-direction: row;
-    height: 210px;
+    height: 220px;
     /* margin: 0; */
     /* margin-bottom: 20px; */
     border-bottom: 4px solid #273037;
@@ -32,7 +32,7 @@
 .headers img {
     width: 60%;
     display: block;
-    height: 150px;
+    height: 100%;
     margin-left: auto;
     top: 0px;
     margin-right: auto;
@@ -145,7 +145,7 @@ a {
     width: calc(100vw/7);
     opacity: 1;
     text-align: left;
-    margin-top: 0px;
+    margin-top: 20px;
     color: #fff8e7;
     border-radius: 15px;
     font-size: calc(10vw/6);
@@ -210,7 +210,6 @@ a {
     width: 12.5%;
     height: 50.5%;
     /* position: relative; */
-    margin: 0 auto;
     margin-top: 30px;
     /* top: 200px; */
 }
