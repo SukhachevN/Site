@@ -85,7 +85,5 @@ $img_src = $img_names
     ?> </section> <?
 
     }
-
-
 }
 ?>
