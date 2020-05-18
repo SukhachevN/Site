@@ -26,7 +26,7 @@ abstract class ACore
     protected function get_rightbar()
     {
 
-        include "rightbar.php";
+       // include "rightbar.php";
 
     }
 
