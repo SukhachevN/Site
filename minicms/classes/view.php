@@ -108,10 +108,15 @@ if ($row1['cat']==3){
                             }
                             else
                             {
+
+                            $clickable = preg_replace('*(f|ht)tps?://[A-Za-z0-9\./?=\+&%]+*', '<a href="$0">$0</a>', $paragraph);
+
 ?>
-                                <p><?php echo "$paragraph"; ?></p>
+                                
+                                <p><?php echo $clickable; ?></p>
+
                             <?php
-                            }
+                             }
                         } ?>
                         </div> </div>
                     <?php

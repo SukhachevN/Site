@@ -44,6 +44,7 @@
     /* background: black; */
     /* margin: 12px; */
     margin-top: 0px;
+    margin-left: 22%;
 }
 
 .mainContent {
@@ -89,6 +90,9 @@
     color: #cacdf3;
 }
 
+.mainDiscription h2 {
+    text-align: center;
+}
 
 .mainDiscriptionImg {
     text-align: center;
@@ -122,8 +126,8 @@ a {
 .semilayer {
     /* width: 960px; */
     height: 100%;
-    margin: 210px auto;
-    /* padding: 5px; */
+    margin: 225px auto;
+    padding: 5px;
     /* margin: 0 auto; */
     /* width: 70%; */
     /* opacity: 0.9; */
