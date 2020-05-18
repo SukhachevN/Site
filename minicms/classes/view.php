@@ -123,7 +123,7 @@ if ($row1['cat']==3){
                             $paragraph = $textarray[$i];
                             if (strstr($paragraph, '#'))
                             {
-                                $paragraphTitle = substr($paragraph, 0, -1);
+                                $paragraphTitle = str_replace("#", "", $paragraph);
 ?>
                                 <h2>
                                     <?php echo "$paragraphTitle"; ?>
@@ -132,10 +132,9 @@ if ($row1['cat']==3){
                             }
                             else
                             {
+                            $clickable = preg_replace('*(f|ht)tps?://[A-Za-z0-9\./?=\+&%]+*', '<a href="$0">$0</a>', $paragraph);
 ?>
-                             <p>
-                                <?php echo "$paragraph"; ?>
-                            </p>
+                                <p><?php echo $clickable; ?></p>
 
                          <?php
                             }
