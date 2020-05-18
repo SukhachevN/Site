@@ -63,7 +63,7 @@ class update_statti extends ACore_Admin
                 $_SESSION['res'] = "<center><h2 style='color:red'>Изменения сохранены</h2></center>";
             }
 
-            $query = "SELECT id_pgh, img_pgh FROM paragraph ORDER BY id_article";
+            $query = "SELECT id_pgh, img_pgh FROM paragraph  WHERE id_article = '$id' ORDER BY id_article";
             $result2 = mysqli_query($link, $query);
             $row2 = mysqli_fetch_array($result2);
             $id_pgh = $row2['id_pgh'];
