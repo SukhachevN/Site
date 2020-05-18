@@ -20,7 +20,7 @@ class category extends ACore
             {
                 $link = mysqli_connect($HOST, root, $PASSWORD, minicms);
                 $query = "SELECT id_article,title_article,description_article,main_img,date_article FROM article WHERE cat='$id_cat' ORDER BY date_article DESC ";
-$query1 = "SELECT id_article,title_article,description_article,main_Img,date_article FROM article ORDER BY date_article DESC";
+$query1 = "SELECT id_article,title_article,description_article,main_Img,date_article,cat FROM article ORDER BY date_article DESC";
                 $result = mysqli_query($link, $query1);
 ?>
       <ul class="topmenu">
@@ -30,10 +30,12 @@ $query1 = "SELECT id_article,title_article,description_article,main_Img,date_art
 for ($j = 0;$j < mysqli_num_rows($result);$j++)
         {
             $row1 = mysqli_fetch_array($result);
+if ($row1['cat']==3){
 ?>
             <li><a href="?option=view&title=<?php  echo $row1['title_article']; ?>&id_text=<?php  echo $row1['id_article']; ?>">
 <?php echo $row1['title_article'] ?> </a></li>
-<?php } ?>
+<?php }
+} ?>
           </ul>
         </li>
         <li><a href="https://bdotools.xyz/map/"><img src="images/buttons/button_karta.png" alt="guides" style="height: calc(10vw/3); min-height:40px" class="buttons"></a></li>
