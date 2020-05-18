@@ -133,7 +133,7 @@ a {
     /* opacity: 0.9; */
     /* margin-top: 30px; */
     border-radius: 25px;
-    /* font-size: calc(100vw/100); */
+    font-size: calc(vw);
     /* position: absolute; */
     /* left: 15%; */
     text-align: center;
