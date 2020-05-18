@@ -77,11 +77,7 @@ if ($row1['cat']==3){
 
                     $row = array();
                     $row = mysqli_fetch_array($result);
-
-
                     $img_src = $row['img_pgh'] 
-
-
                     ?>
                     <?php
                     if (is_file($img_src) && file_exists($img_src))
@@ -108,13 +104,9 @@ if ($row1['cat']==3){
                             }
                             else
                             {
-
                             $clickable = preg_replace('*(f|ht)tps?://[A-Za-z0-9\./?=\+&%]+*', '<a href="$0">$0</a>', $paragraph);
-
-?>
-                                
+?>  
                                 <p><?php echo $clickable; ?></p>
-
                             <?php
                              }
                         } ?>
