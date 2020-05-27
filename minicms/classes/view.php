@@ -94,9 +94,9 @@ if ($row1['cat']==3){
                         for ($i = 0;$i < $textCount;$i++)
                         {
                             $paragraph = $textarray[$i];
-                            if (strstr($paragraph, '‘'))
+                            if (strstr($paragraph, '○'))
                             {
-                                $paragraphTitle = str_replace("‘", "", $paragraph); ?>
+                                $paragraphTitle = str_replace("○", "", $paragraph); ?>
                                  <h2>
                                     <?php echo "$paragraphTitle"; ?>
                                 </h2>
@@ -121,9 +121,9 @@ if ($row1['cat']==3){
                         for ($i = 0;$i < $fileCount;$i++)
                         {
                             $paragraph = $textarray[$i];
-                            if (strstr($paragraph, '‘'))
+                            if (strstr($paragraph, '○'))
                             {
-                                $paragraphTitle = str_replace("‘", "", $paragraph);
+                                $paragraphTitle = str_replace("○", "", $paragraph);
 ?>
                                 <h2>
                                     <?php echo "$paragraphTitle"; ?>
