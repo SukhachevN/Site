@@ -43,7 +43,7 @@ class login extends ACore
             exit(mysqli_error($link));
         }
         print <<<HEREDOC
-<center><div class='loginmenu'><form enctype='multipart/form-data' action='' method='POST'>
+<div class="semilayer"><center><div class='loginmenu'><form enctype='multipart/form-data' action='' method='POST'>
 <p>Логин:<br />
 <input type='text' name='login'>
 </p>
@@ -51,7 +51,7 @@ class login extends ACore
 <p>Пароль:<br />
 <input type='password' name='password'>
 </p>
-<p><input type='submit' name='button' value='Войти'></p></form></div></center>
+<p><input type='submit' name='button' value='Войти'></p></form></div></center></div>
 HEREDOC;
         
 
