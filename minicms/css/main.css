@@ -64,6 +64,7 @@
 .mainContent2 {
 
     display: flex;
+    color: white;
     flex-direction: column;
     padding: 0 0 20px 0px;
     margin-bottom: 20px;
@@ -167,6 +168,7 @@ a {
     width: calc(30vw);
     opacity: 1;
     text-align: center;
+    margin-left: 40%;
     margin-top: 30px;
     color: white;
     border-radius: 25px;
